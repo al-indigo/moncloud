@@ -1,17 +1,17 @@
 ---
 layout: about
-title: about
+title: О нас
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Отечественная облачная платформа из <a href="https://reestr.digital.gov.ru/reestr/3050301/">Реестра МинЦифры №26306</a>
 
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+# profile:
+#   align: right
+#   image: prof_pic.jpg
+#   image_circular: false # crops the image to make it circular
+#   more_info: >
+#     <p>555 your office number</p>
+#     <p>123 your address street</p>
+#     <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,22 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+### Что мы предлагаем
+Облако IaaS в двух моделях:
+  1. On-premise инсталляция на вашей площадке. Доступ к интернету не требуется.
+  2. Подконтрольные вам инсталляции в Tier-IV датацентре с возможностью эластичного добавления и уменьшения вычислительной ёмкости. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+В составе облака вы также можете получить дополнительные возможности:
+  1. Полностью подконтрольные PaaS-сервисы с возможностью быстрого добавления новых сервисов. Простота добавления обеспечивается использованием стандарта OASIS TOSCA в нашем движке оркестрации платформенных сервисов.
+  2. Desktop as a Service для Windows и Linux. Возможны варианты On-premise и инсталляции, управляемые на нашей стороне.Политика лицензирования прозрачная, и вы сможете понять, во сколько вам обойдётся облако, не связываясь с менеджерами (где-то здесь жирная ссылка на "калькулятор". Также мы предлагаем демо-доступ с ограниченным временем использования и при условии верификации личности. Количество демо-ресурсов ограничено, поэтому возможно придётся подождать
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+### Наши сильные стороны
+
+#### Промышленный подход к продуктам
+В основе IaaS-части лежит комбинация продуктов Asperitas и AccentOS. AccentOS известен в сообществе своими функциональными возможностями, Asperitas использует надёжные механизмы безопасности и является передовой разработкой в консорциуме облачных технологий Российской Академии Наук.
+
+#### Научные принципы
+Проект изначально запущен в рамках сотрудничества с Институтом Системного Программирования им. В.П. Иванникова Российской Академии Наук. Институт занимается разработками технологий от уровня оборудования до уровня прикладных приложений. Институт также известен повышенным вниманием к анализу исходных и бинарных кодов, а также внимательностью к аспектам безопасности на всех уровнях.
+
+#### Поддержка от индустрии
+Компания основана командой, занимающейся строительством сверхнадёжных ЦОД и построившей первый в РФ Tier-IV датацентр.
