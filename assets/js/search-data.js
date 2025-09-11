@@ -9,29 +9,29 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/al-folio/";
     },
-  },{id: "nav-blog",
-          title: "blog",
+  },{id: "nav-новости",
+          title: "Новости",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/al-folio/blog/";
           },
-        },{id: "nav-projects",
-          title: "projects",
+        },{id: "nav-продукты",
+          title: "Продукты",
           description: "A growing collection of your cool projects.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/al-folio/projects/";
+            window.location.href = "/al-folio/products/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
+        },{id: "nav-технологии",
+          title: "Технологии",
           description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/al-folio/repositories/";
           },
-        },{id: "nav-cv",
-          title: "cv",
+        },{id: "nav-документация",
+          title: "Документация",
           description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
           section: "Navigation",
           handler: () => {
