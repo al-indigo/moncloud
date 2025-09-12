@@ -3,7 +3,9 @@
 # -----------------------------------------------------------------------------
 
 title: moncloud
-logo: logo-light.svg
+logo: "assets/img/logo-dark.svg"
+logo_light: "assets/img/logo-light.svg"
+logo_dark:  "assets/img/logo-dark.svg"
 first_name: moncloud
 #middle_name: favicon.svg
 #last_name: Name
