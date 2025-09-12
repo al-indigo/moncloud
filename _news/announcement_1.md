@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-11-05
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Первый релиз платформы: (Алан Перлис)[https://docs.moncloud.ru/ru/release_notes/release_notes/ver_1.0.0.html#ver-1-0-0].

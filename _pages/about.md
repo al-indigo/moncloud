@@ -80,4 +80,4 @@ latest_posts:
 
 ### Наш интегратор
 
-<img src="assets/img/KiS_logo_symbol.svg"/> <a href="https://www.c-lan.ru/">компьютеры и сети</a>     
+<img style="height: 1em" src="assets/img/KiS_logo_symbol.png"/> <a href="https://www.c-lan.ru/">компьютеры и сети</a>     
