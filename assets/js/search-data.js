@@ -9,33 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-новости",
-          title: "Новости",
+  },{id: "nav-события",
+          title: "События",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/blog/";
+            window.location.href = "/news/";
           },
         },{id: "nav-продукты",
           title: "Продукты",
-          description: "A growing collection of your cool projects.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/products/";
-          },
-        },{id: "nav-технологии",
-          title: "Технологии",
-          description: "Мы придерживаемся идеологии коллаборитивной разработки и разумеется опираемся на open-source технологии. Более того, всё что мы можем, мы стараемся отправлять обратно в upstream, насколько это возможно в нынешних условиях. Поэтому мы не можем обойти вниманием технологии, которые используем в качестве основы. Все мы перечислить не можем, но постараемся подсветить самые важные (в том числе и технологии, которые заопенсорсили сами)",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
-        },{id: "nav-развёртывания",
-          title: "Развёртывания",
-          description: "Развёртывания, о которых мы можем писать публично. Их существенно больше, однако мы уважаем право наших клиентов на конфиденциальность, поэтому пишем только о тех, о которых можем.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
           },
         },{id: "dropdown-обучение",
               title: "Обучение",
@@ -51,26 +37,21 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/articles/";
               },
-            },{id: "dropdown-blog",
-              title: "blog",
+            },{id: "dropdown-технологии",
+              title: "Технологии",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/blog/";
+                window.location.href = "/repositories/";
               },
-            },{id: "books-the-godfather",
-          title: 'The Godfather',
+            },{id: "news-первый-релиз-платформы-алан-перлис",
+          title: 'Первый релиз платформы: Алан Перлис.',
           description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-первый-релиз-платформы-алан-перлис-https-docs-moncloud-ru-ru-release-notes-release-notes-ver-1-0-0-html-ver-1-0-0",
-          title: 'Первый релиз платформы: (Алан Перлис)[https://docs.moncloud.ru/ru/release_notes/release_notes/ver_1.0.0.html#ver-1-0-0].',
+          section: "News",},{id: "news-релиз-1-1-морис-уилкс",
+          title: 'Релиз 1.1: Морис Уилкс',
           description: "",
-          section: "News",},{id: "news-релиз-1-1-морис-уилкс-https-docs-moncloud-ru-ru-release-notes-release-notes-ver-1-1-0-html-ver-1-1-0",
-          title: 'Релиз 1.1: (Морис Уилкс)[https://docs.moncloud.ru/ru/release_notes/release_notes/ver_1.1.0.html#ver-1-1-0].',
-          description: "",
-          section: "News",},{id: "news-регистрация-в-реестре-отечественного-по-министерства-цифрового-развития-отечественная-облачная-платформа-1-0-https-reestr-digital-gov-ru-reestr-3050301",
-          title: 'Регистрация в Реестре Отечественного ПО Министерства Цифрового Развития: (Отечественная облачная платформа 1.0)[https://reestr.digital.gov.ru/reestr/3050301/].',
+          section: "News",},{id: "news-регистрация-в-реестре-отечественного-по-министерства-цифрового-развития-отечественная-облачная-платформа-1-0-коробочные-продукты-монклауд-vdi-дорабатываемые-продукты-публичное-облако-любой-paas-openstack-as-a-service",
+          title: 'Регистрация в Реестре Отечественного ПО Министерства Цифрового Развития: Отечественная облачная платформа 1.0. Коробочные...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
