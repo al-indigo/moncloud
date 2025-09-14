@@ -2,7 +2,7 @@
 layout: page
 title: Интересное
 nav: true
-nav_order: 8
+nav_order: 7
 dropdown: true
 children:
   - title: Обучение
@@ -11,6 +11,6 @@ children:
   - title: Публикации
     permalink: /articles/
   - title: divider
-  - title: blog
-    permalink: /blog/
+  - title: Технологии
+    permalink: /repositories/
 ---

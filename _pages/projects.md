@@ -2,10 +2,10 @@
 layout: page
 title: Продукты
 permalink: /products/
-description: A growing collection of your cool projects.
+description:
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: ["Коробочные решения", "Пространство для обсуждения"]
 horizontal: false
 ---
 
