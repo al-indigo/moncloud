@@ -98,24 +98,9 @@ ninja.data = [{
           section: "News",},{id: "news-релиз-1-4-джеймс-уилкинсон",
           title: 'Релиз 1.4: Джеймс Уилкинсон',
           description: "",
-          section: "News",},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+          section: "News",},{id: "projects-openstack-as-a-service",
+          title: 'Openstack as a Service',
+          description: "on-prem облако в нашем/Вашем датацентре. Всё готово, только попросите.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
             },},{id: "projects-project-7",
@@ -133,11 +118,26 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-mlm",
+          title: 'MLM',
+          description: "облачный сервис MLOps в on-prem формате",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/mlm/";
             },},{id: "projects-moncloud",
           title: 'moncloud',
           description: "on-prem дистрибутив облачной среды, промышленное облако на базе OpenStack",
           section: "Projects",handler: () => {
               window.location.href = "/projects/moncloud/";
+            },},{id: "projects-публичное-облако",
+          title: 'Публичное облако',
+          description: "whitelabel-публичное облако на базе наших технологий",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/public_cloud/";
+            },},{id: "projects-унс",
+          title: 'УнС',
+          description: "Сервис для РБПО, доступный локально в организации",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/uns/";
             },},{id: "projects-wormhole",
           title: 'wormhole',
           description: "движок предоставления доступа к удалённым рабочим столам",
