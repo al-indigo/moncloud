@@ -7,56 +7,56 @@ ninja.data = [{
     title: "О нас",
     section: "Navigation",
     handler: () => {
-      window.location.href = "/";
+      window.location.href = "/moncloud/";
     },
   },{id: "nav-события",
           title: "События",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/news/";
+            window.location.href = "/moncloud/news/";
           },
         },{id: "nav-продукты",
           title: "Продукты",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/products/";
+            window.location.href = "/moncloud/products/";
           },
         },{id: "nav-контакты",
           title: "Контакты",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/contacts/";
+            window.location.href = "/moncloud/contacts/";
           },
         },{id: "dropdown-обучение",
               title: "Обучение",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/education/";
+                window.location.href = "/moncloud/education/";
               },
             },{id: "dropdown-публикации",
               title: "Публикации",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/articles/";
+                window.location.href = "/moncloud/articles/";
               },
             },{id: "dropdown-технологии",
               title: "Технологии",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/repositories/";
+                window.location.href = "/moncloud/repositories/";
               },
             },{id: "dropdown-сертификаты-товарные-знаки-рид",
               title: "Сертификаты, товарные знаки, РИД",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/patents/";
+                window.location.href = "/moncloud/patents/";
               },
             },{id: "news-регистрация-компании-ооо-системные-решения",
           title: 'Регистрация компании ООО “Системные решения”.',
@@ -65,12 +65,12 @@ ninja.data = [{
           title: 'Стратегическое партнёрство с Институтом Системного Программирования им. В.П. Иванникова Российской Академии Наук (ИСП...',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/ispras_collab/";
+              window.location.href = "/moncloud/news/ispras_collab/";
             },},{id: "news-начало-внедрения-технологий-компании-ооо-акцентос-в-дистрибутив-moncloud",
           title: 'Начало внедрения технологий компании ООО «Акцентос» в дистрибутив moncloud',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/accentos_collab/";
+              window.location.href = "/moncloud/news/accentos_collab/";
             },},{id: "news-первый-релиз-платформы-алан-перлис",
           title: 'Первый релиз платформы: Алан Перлис.',
           description: "",
@@ -102,47 +102,47 @@ ninja.data = [{
           title: 'Openstack as a Service',
           description: "on-prem облако в нашем/Вашем датацентре. Всё готово, только попросите.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
+              window.location.href = "/moncloud/projects/6_project/";
             },},{id: "projects-project-7",
           title: 'project 7',
           description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
+              window.location.href = "/moncloud/projects/7_project/";
             },},{id: "projects-project-8",
           title: 'project 8',
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
+              window.location.href = "/moncloud/projects/8_project/";
             },},{id: "projects-project-9",
           title: 'project 9',
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/moncloud/projects/9_project/";
             },},{id: "projects-mlm",
           title: 'MLM',
           description: "облачный сервис MLOps в on-prem формате",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/mlm/";
+              window.location.href = "/moncloud/projects/mlm/";
             },},{id: "projects-moncloud",
           title: 'moncloud',
           description: "on-prem дистрибутив облачной среды, промышленное облако на базе OpenStack",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/moncloud/";
+              window.location.href = "/moncloud/projects/moncloud/";
             },},{id: "projects-публичное-облако",
           title: 'Публичное облако',
           description: "whitelabel-публичное облако на базе наших технологий",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/public_cloud/";
+              window.location.href = "/moncloud/projects/public_cloud/";
             },},{id: "projects-унс",
           title: 'УнС',
           description: "Сервис для РБПО, доступный локально в организации",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/uns/";
+              window.location.href = "/moncloud/projects/uns/";
             },},{id: "projects-wormhole",
           title: 'wormhole',
           description: "движок предоставления доступа к удалённым рабочим столам",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/wormhole/";
+              window.location.href = "/moncloud/projects/wormhole/";
             },},{
       id: 'light-theme',
       title: 'Change theme to light',
