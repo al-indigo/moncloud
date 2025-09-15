@@ -2,7 +2,7 @@
 #   - torvalds
 #   - alshedivat
 
-repo_description_lines_max: 3
+repo_description_lines_max: 5
 
 github_repos:
   - torvalds/linux

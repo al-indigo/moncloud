@@ -13,4 +13,7 @@ children:
   - title: divider
   - title: Технологии
     permalink: /repositories/
+  - title: divider
+  - title: Сертификаты, товарные знаки, РИД
+    permalink: /patents/
 ---

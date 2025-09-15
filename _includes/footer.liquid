@@ -1,14 +1,19 @@
 {% capture footer_contents %}
-  &copy; Права защищены; {{ site.time | date: '2023-%Y' }};
-  {{ site.first_name }}
-  {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
+  <b>
+  {{ site.first_name }}: {{ site.time | date: '2023-%Y' }}.
+  Контакты: <a href="tel:+74958990929">+7 495 899 09 29</a>, 
+  <a href="mailto:info@moncloud.ru">info@moncloud.ru</a>
+  </b>
+  <br/>
+  <i>
+  {{ site.footer_text }}
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}
   {% if site.last_updated %}
     Последнее обновление: {{ 'now' | date: '%Y.%m.%d' }}.
   {% endif %}
+  </i>
 {% endcapture %}
 
 {% if site.footer_fixed %}
