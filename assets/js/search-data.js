@@ -67,18 +67,18 @@ ninja.data = [{
           section: "News",handler: () => {
               window.location.href = "/moncloud/news/ispras_collab/";
             },},{id: "news-начало-внедрения-технологий-компании-ооо-акцентос-в-дистрибутив-moncloud",
-          title: 'Начало внедрения технологий компании ООО «Акцентос» в дистрибутив moncloud',
+          title: 'Начало внедрения технологий компании ООО «Акцентос» в дистрибутив moncloud.',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/moncloud/news/accentos_collab/";
             },},{id: "news-первый-релиз-платформы-алан-перлис",
           title: 'Первый релиз платформы: Алан Перлис.',
           description: "",
-          section: "News",},{id: "news-дистрибутив-асперитас-получил-сертификат-фстэк-4880-на-соответствие-следующим-требованиям-требования-доверия-4-требования-к-средствам-виртуализации-4",
-          title: 'Дистрибутив Асперитас получил сертификат ФСТЭК №4880 на соответствие следующим требованиям: Требования доверия(4), Требования...',
+          section: "News",},{id: "news-дистрибутив-асперитас-получил-сертификат-фстэк-4880-на-соответствие-требованиям-доверия-4-к-средствам-виртуализации-4",
+          title: 'Дистрибутив Асперитас получил сертификат ФСТЭК №4880 на соответствие требованиям: доверия(4), к средствам виртуализации(4)....',
           description: "",
-          section: "News",},{id: "news-рассказали-на-nexthop-yandex-как-устроен-наш-собственный-sdn-движок-ссылка-на-рассказ",
-          title: 'Рассказали на NextHop (Yandex) как устроен наш собственный SDN-движок. Ссылка на рассказ.',
+          section: "News",},{id: "news-рассказали-на-nexthop-yandex-как-устроен-наш-собственный-sdn-ссылка-на-рассказ",
+          title: 'Рассказали на NextHop (Yandex) как устроен наш собственный SDN. Ссылка на рассказ.',
           description: "",
           section: "News",},{id: "news-регистрация-в-реестре-отечественного-по-министерства-цифрового-развития-отечественная-облачная-платформа-1-0",
           title: 'Регистрация в Реестре Отечественного ПО Министерства Цифрового Развития: Отечественная облачная платформа 1.0.',
@@ -100,7 +100,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-openstack-as-a-service",
           title: 'Openstack as a Service',
-          description: "on-prem облако в нашем/Вашем датацентре. Всё готово, только попросите.",
+          description: "on-prem облако по запросу в нашем/Вашем датацентре",
           section: "Projects",handler: () => {
               window.location.href = "/moncloud/projects/6_project/";
             },},{id: "projects-project-7",
@@ -133,14 +133,14 @@ ninja.data = [{
           description: "whitelabel-публичное облако на базе наших технологий",
           section: "Projects",handler: () => {
               window.location.href = "/moncloud/projects/public_cloud/";
-            },},{id: "projects-унс",
-          title: 'УнС',
-          description: "Сервис для РБПО, доступный локально в организации",
+            },},{id: "projects-среда-безопасной-разработки-полного-цикла",
+          title: 'Среда безопасной разработки полного цикла',
+          description: "сервис для РБПО, доступный локально в организации",
           section: "Projects",handler: () => {
               window.location.href = "/moncloud/projects/uns/";
             },},{id: "projects-wormhole",
           title: 'wormhole',
-          description: "движок предоставления доступа к удалённым рабочим столам",
+          description: "технология предоставления доступа к удалённым рабочим столам",
           section: "Projects",handler: () => {
               window.location.href = "/moncloud/projects/wormhole/";
             },},{
