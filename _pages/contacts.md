@@ -12,7 +12,6 @@ permalink: /contacts/
 
 **Написать**: <a href="mailto:info@moncloud.ru">info@moncloud.ru</a>
 
-**Директор**: Арсен Рубенович Цатурян
 
 ## Реквизиты
 
@@ -26,4 +25,4 @@ permalink: /contacts/
 
 *(совпадает с фактическим)*
 
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09e00c515809b2b796c12b87bb6adedf12bf7091e3415b17dcaa8cf0f3f8b2d4&amp;width=862&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A09e00c515809b2b796c12b87bb6adedf12bf7091e3415b17dcaa8cf0f3f8b2d4&amp;width=400&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
