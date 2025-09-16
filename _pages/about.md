@@ -3,7 +3,7 @@ layout: about
 title: О нас
 pretty_table: true
 permalink: /
-subtitle: Отечественная облачная платформа из <a href="https://reestr.digital.gov.ru/reestr/3050301/">Реестра ПО МинЦифры №26306</a>
+subtitle: Отечественная облачная платформа, включенная в <a href="https://reestr.digital.gov.ru/reestr/3050301/">Реестр ПО МинЦифры №26306</a>
 
 # profile:
 #   align: right
