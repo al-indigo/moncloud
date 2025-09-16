@@ -9,7 +9,7 @@ images:
 
 ---
 
-Подписан договор о стратегическом сотрудничестве с Институтом Системного Программирования им. В.П. Иванникова Российской Академии Наук (ИСП РАН) в ходе Открытой конференции ИСП РАН подписали договор о стратегическом сотрудничестве. 
+Подписан договор о стратегическом сотрудничестве с Институтом Системного Программирования им. В.П. Иванникова Российской Академии Наук (ИСП РАН) в ходе Открытой конференции ИСП РАН. 
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
   <swiper-slide>{% include figure.liquid loading="eager" path="assets/img/ispras-collab.jpg" class="img-fluid rounded z-depth-1" %}</swiper-slide>
