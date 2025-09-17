@@ -2,7 +2,7 @@
 layout: page
 title: wormhole
 description: технология предоставления доступа к удалённым рабочим столам
-#img: assets/img/moncloud-screen.png
+img: assets/img/wormhole-logo.svg
 importance: 1
 category: "Готовые решения"
 related_publications: false
