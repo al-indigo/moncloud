@@ -51,8 +51,8 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/repositories/";
               },
-            },{id: "dropdown-сертификаты-товарные-знаки-рид",
-              title: "Сертификаты, товарные знаки, РИД",
+            },{id: "dropdown-лицензии-сертификаты-товарные-знаки-рид",
+              title: "Лицензии, сертификаты, товарные знаки, РИД",
               description: "",
               section: "Dropdown",
               handler: () => {
