@@ -9,14 +9,14 @@ images:
   slider: true
 ---
 
-У нас есть набор обучающих материалов на платформе <a href="https://unicraft.org">unicraft.ru</a>
+На платформе <a href="https://unicraft.org">unicraft.ru</a> размещен набор обучающих материалов.
 
 <swiper-container keyboard="true" navigation="true" pagination="true" pagination-clickable="true" pagination-dynamic-bullets="true" rewind="true">
   <swiper-slide>{% include figure.liquid loading="eager" path="/assets/img/unicraft-screenshot.png"
   class="img-fluid rounded z-depth-1" %}</swiper-slide>
 </swiper-container>
 
-При активных отношениях туда предоставляется доступ для инженеров, которые будут сопровождать нашу платформу на вашей площадке.
+ В рамках сотрудничества мы готовы предоставить доступ к указанным материалам для инженеров, которые будут осуществлять сопровождение нашей платформы на вашей площадке.
 
 Документация на платформу <a href="https://docs.moncloud.ru/">доступна всем</a>.
 
