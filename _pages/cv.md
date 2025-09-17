@@ -1,11 +1,11 @@
 ---
 layout: cv
-permalink: /deployments/
-title: Развёртывания
+permalink: /patents/
+title: Лицензии, сертификаты, товарные знаки, РИД
 nav: false
 #nav_order: 5
 #cv_pdf: example_pdf.pdf # you can also use external links here
-description: Развёртывания, о которых мы можем писать публично. Их существенно больше, однако мы уважаем право наших клиентов на конфиденциальность, поэтому пишем только о тех, о которых можем.
+description: 
 toc:
   sidebar: left
 ---
