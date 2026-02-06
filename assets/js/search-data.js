@@ -123,7 +123,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/triniti_press_release/";
-            },},{id: "projects-openstack-as-a-service",
+            },},{id: "news-облачная-платформа-moncloud-подтвердила-совместимость-с-платформой-контейнеризации-боцман",
+          title: 'Облачная платформа moncloud подтвердила совместимость с платформой контейнеризации Боцман',
+          description: "",
+          section: "News",},{id: "projects-openstack-as-a-service",
           title: 'Openstack as a Service',
           description: "on-prem облако по запросу в нашем/Вашем датацентре",
           section: "Projects",handler: () => {
