@@ -123,10 +123,12 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/triniti_press_release/";
-            },},{id: "news-облачная-платформа-moncloud-подтвердила-совместимость-с-платформой-контейнеризации-боцман",
-          title: 'Облачная платформа moncloud подтвердила совместимость с платформой контейнеризации Боцман',
+            },},{id: "news-облачная-платформа-moncloud-подтвердила-совместимость-с-платформой-контейнеризации-боцман-для-управления-мультикластерами-kubernetes",
+          title: 'Облачная платформа moncloud подтвердила совместимость с платформой контейнеризации «Боцман» для управления мультикластерами Kubernetes...',
           description: "",
-          section: "News",},{id: "projects-openstack-as-a-service",
+          section: "News",handler: () => {
+              window.location.href = "/news/bootsman_press_release/";
+            },},{id: "projects-openstack-as-a-service",
           title: 'Openstack as a Service',
           description: "on-prem облако по запросу в нашем/Вашем датацентре",
           section: "Projects",handler: () => {
