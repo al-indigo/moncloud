@@ -128,6 +128,11 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/bootsman_press_release/";
+            },},{id: "news-облачная-платформа-moncloud-провела-тестирование-миграции-виртуальных-машин-с-использованием-решения-mind-migrate",
+          title: 'Облачная платформа moncloud провела тестирование миграции виртуальных машин с использованием решения MIND Migrate...',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/mind_press_release/";
             },},{id: "projects-openstack-as-a-service",
           title: 'Openstack as a Service',
           description: "on-prem облако по запросу в нашем/Вашем датацентре",
