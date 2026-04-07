@@ -133,7 +133,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/mind_press_release/";
-            },},{id: "projects-openstack-as-a-service",
+            },},{id: "news-релиз-1-7-чарльз-бахман",
+          title: 'Релиз 1.7: Чарльз Бахман',
+          description: "",
+          section: "News",},{id: "projects-openstack-as-a-service",
           title: 'Openstack as a Service',
           description: "on-prem облако по запросу в нашем/Вашем датацентре",
           section: "Projects",handler: () => {
