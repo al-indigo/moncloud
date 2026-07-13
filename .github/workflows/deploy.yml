@@ -65,22 +65,122 @@ permissions:
   contents: write
 
 jobs:
+  repository_cards:
+    name: Repository cards — ${{ matrix.repository }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - repository: torvalds/linux
+            owner: torvalds
+            repo: linux
+            slug: torvalds--linux
+          - repository: qemu/qemu
+            owner: qemu
+            repo: qemu
+            slug: qemu--qemu
+          - repository: openstack/nova
+            owner: openstack
+            repo: nova
+            slug: openstack--nova
+          - repository: openstack/neutron
+            owner: openstack
+            repo: neutron
+            slug: openstack--neutron
+          - repository: openstack/cinder
+            owner: openstack
+            repo: cinder
+            slug: openstack--cinder
+          - repository: openstack/glance
+            owner: openstack
+            repo: glance
+            slug: openstack--glance
+          - repository: openstack/keystone
+            owner: openstack
+            repo: keystone
+            slug: openstack--keystone
+          - repository: openstack/ironic
+            owner: openstack
+            repo: ironic
+            slug: openstack--ironic
+          - repository: openstack/heat
+            owner: openstack
+            repo: heat
+            slug: openstack--heat
+          - repository: ceph/ceph
+            owner: ceph
+            repo: ceph
+            slug: ceph--ceph
+          - repository: ispras/cotea
+            owner: ispras
+            repo: cotea
+            slug: ispras--cotea
+          - repository: Gstreamer/gstreamer
+            owner: Gstreamer
+            repo: gstreamer
+            slug: gstreamer--gstreamer
+          - repository: pion/webrtc
+            owner: pion
+            repo: webrtc
+            slug: pion--webrtc
+
+    steps:
+      - name: Generate light card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: >-
+            username=${{ matrix.owner }}
+            &repo=${{ matrix.repo }}
+            &theme=default
+            &locale=ru
+            &show_owner=true
+            &description_lines_count=5
+          path: repository-cards/${{ matrix.slug }}-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate dark card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: >-
+            username=${{ matrix.owner }}
+            &repo=${{ matrix.repo }}
+            &theme=dark
+            &locale=ru
+            &show_owner=true
+            &description_lines_count=5
+          path: repository-cards/${{ matrix.slug }}-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload repository cards
+        uses: actions/upload-artifact@v4
+        with:
+          name: repository-card-${{ matrix.slug }}
+          path: repository-cards/*.svg
+          if-no-files-found: error
+          retention-days: 1
+
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
+    needs: repository_cards
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
+
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+
       - name: Setup Python 🐍
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-          cache: "pip" # caching pip dependencies
+          cache: "pip"
+
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -88,16 +188,26 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+
+      - name: Add generated repository cards
+        uses: actions/download-artifact@v4
+        with:
+          pattern: repository-card-*
+          path: _site/assets/img/repositories
+          merge-multiple: true
+
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
