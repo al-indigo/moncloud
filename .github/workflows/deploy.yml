@@ -130,13 +130,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: >-
-            username=${{ matrix.owner }}
-            &repo=${{ matrix.repo }}
-            &theme=default
-            &locale=ru
-            &show_owner=true
-            &description_lines_count=5
+          options: username=${{ matrix.owner }}&repo=${{ matrix.repo }}&theme=default&locale=ru&show_owner=true&description_lines_count=5
           path: repository-cards/${{ matrix.slug }}-light.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -144,15 +138,20 @@ jobs:
         uses: stats-organization/github-readme-stats-action@v2
         with:
           card: pin
-          options: >-
-            username=${{ matrix.owner }}
-            &repo=${{ matrix.repo }}
-            &theme=dark
-            &locale=ru
-            &show_owner=true
-            &description_lines_count=5
+          options: username=${{ matrix.owner }}&repo=${{ matrix.repo }}&theme=dark&locale=ru&show_owner=true&description_lines_count=5
           path: repository-cards/${{ matrix.slug }}-dark.svg
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Validate generated cards
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(find repository-cards -maxdepth 1 -name '*.svg' -type f | wc -l)" -eq 2
+          grep -L '<svg' repository-cards/*.svg && exit 1 || true
+          if grep -Eqi 'Something went wrong|Language not found|Could not fetch|Rate limit' repository-cards/*.svg; then
+            echo 'github-readme-stats generated an error card' >&2
+            exit 1
+          fi
 
       - name: Upload repository cards
         uses: actions/upload-artifact@v4
