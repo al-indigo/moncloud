@@ -31,7 +31,22 @@ jobs:
 
       # Build site (al-folio is just Jekyll)
       - run: bundle install --without development
-      - run: bundle exec jekyll build --trace
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install build dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+          python -m pip install --upgrade nbconvert
+          command -v jupyter
+          command -v convert
+
+      - name: Build Jekyll
+        run: bundle exec jekyll build --trace
         env:
           JEKYLL_ENV: production
 
